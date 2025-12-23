@@ -100,7 +100,7 @@ const SetupView: React.FC<SetupViewProps> = ({onStart}) => {
                                 type="text"
                                 value={roundNames[i] || ''}
                                 onChange={e => handleRoundNameChange(i, e.target.value)}
-                                placeholder={`Game ${i + 1}`}
+                                placeholder={`Spiel ${i + 1}`}
                                 className="flex-1 bg-slate-950/50 border border-slate-800 rounded-md px-3 py-2 text-sm focus:border-slate-600 outline-none"
                             />
                             <span className="text-[10px] text-slate-600 font-bold whitespace-nowrap">{i + 1} pts</span>
