@@ -13,7 +13,7 @@ const GameView: React.FC<GameViewProps> = ({gameState, scores, onUpdateRound}) =
     const {team1, team2} = gameState.teams;
 
     const totalPoints = gameState.rounds.reduce((a, b) => a + b.pointsValue, 0);
-    const winLine = Math.floor(totalPoints / 2) + 1;
+    const winLine = totalPoints;
 
     const team1Percent = Math.min((scores.team1 / winLine) * 100, 100);
     const team2Percent = Math.min((scores.team2 / winLine) * 100, 100);

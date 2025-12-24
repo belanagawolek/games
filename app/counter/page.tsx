@@ -34,7 +34,7 @@ const App: React.FC = () => {
     }, [gameState.rounds]);
 
     const winner = useMemo(() => {
-        const winThreshold = Math.floor(totalPossiblePoints / 2) + 1;
+        const winThreshold = totalPossiblePoints;
         if (teamScores.team1 >= winThreshold) return gameState.teams.team1;
         if (teamScores.team2 >= winThreshold) return gameState.teams.team2;
 
