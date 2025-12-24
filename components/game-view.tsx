@@ -38,10 +38,6 @@ const GameView: React.FC<GameViewProps> = ({gameState, scores, onUpdateRound}) =
                 </div>
 
                 <div className="flex flex-col items-center justify-center space-y-2">
-                    <div
-                        className="bg-slate-800 text-slate-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">
-                        Der erste mit {winLine} Punkten gewinnt
-                    </div>
                     <div className="text-2xl font-display font-black text-slate-700">VS</div>
                 </div>
 
