@@ -54,7 +54,7 @@ const App: React.FC = () => {
     useEffect(() => {
         if (winner && gameState.status === GameStatus.PLAYING) {
             // eslint-disable-next-line react-hooks/set-state-in-effect
-            setGameState(prev => ({...prev, status: GameStatus.FINISHED}));
+            // setGameState(prev => ({...prev, status: GameStatus.FINISHED}));
         }
     }, [winner, gameState.status]);
 
